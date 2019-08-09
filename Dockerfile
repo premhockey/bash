@@ -1,2 +1,2 @@
-FROM camw/centos-nginx:latest
-RUN yum -y install package-x
+FROM nginx
+COPY static-html-directory /usr/share/nginx/html
