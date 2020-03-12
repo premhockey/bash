@@ -1,8 +1,2 @@
-# Filename: Dockerfile 
-FROM node:10-alpine
-WORKDIR /usr/src/app
-COPY package*.json ./
-RUN npm install
-COPY . .
-EXPOSE 3000
-CMD ["npm", "start"]
+#FROM is the base image for which we will run our application
+FROM nginx:latest
